@@ -54,6 +54,15 @@
             <p>Datepicker can also be shown inline with the <code>inline</code> prop, input is removed, set a <code>v-model</code> to get the date.</p>
         </Example>
 
+        <Example :component="ExUnselectable" :code="ExUnselectableCode" title="Unselectable" vertical>
+            <p>
+                Datepicker can have certain dates unselectable with the
+                <code>unselectable-dates</code> <span class="tag is-info">0.6.0</span>,
+                <code>unselectable-days-of-week</code> <span class="tag is-info">0.6.3</span> and
+                <code>unselectable-days-of-month</code> <span class="tag is-info">dev</span> props.
+            </p>
+        </Example>
+
         <Example :component="ExEvents" :code="ExEventsCode" title="Events" vertical>
             <p>Dates can be passed to the datepicker with the <code>events</code> prop and shown with indicators.</p>
         </Example>
@@ -110,6 +119,9 @@
     import ExInline from './examples/ExInline'
     import ExInlineCode from '!!raw-loader!./examples/ExInline'
 
+    import ExUnselectable from './examples/ExUnselectable'
+    import ExUnselectableCode from '!!raw-loader!./examples/ExUnselectable'
+
     import ExEvents from './examples/ExEvents'
     import ExEventsCode from '!!raw-loader!./examples/ExEvents'
 
@@ -140,6 +152,8 @@
                 ExTriggerCode,
                 ExInline,
                 ExInlineCode,
+                ExUnselectable,
+                ExUnselectableCode,
                 ExEvents,
                 ExEventsCode,
                 ExMonth,

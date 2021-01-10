@@ -135,6 +135,13 @@ export default [
                 default: '-'
             },
             {
+                name: '<code>unselectable-days-of-month</code>',
+                description: 'Array of unselectable days of month',
+                type: 'Array',
+                values: '<code>1 - 31</code>',
+                default: '-'
+            },
+            {
                 name: '<code>selectable-dates</code>',
                 description: 'Array of selectable dates',
                 type: 'Array',
