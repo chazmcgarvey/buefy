@@ -23,6 +23,7 @@ let config = {
     defaultDayNames: null,
     defaultMonthNames: null,
     defaultFirstDayOfWeek: null,
+    defaultUnselectableDaysOfMonth: null,
     defaultUnselectableDaysOfWeek: null,
     defaultTimeFormatter: null,
     defaultTimeParser: null,

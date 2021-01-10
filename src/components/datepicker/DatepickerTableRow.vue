@@ -68,6 +68,7 @@ export default {
         disabled: Boolean,
         unselectableDates: Array,
         unselectableDaysOfWeek: Array,
+        unselectableDaysOfMonth: Array,
         selectableDates: Array,
         events: Array,
         indicators: String,
@@ -189,6 +190,13 @@ export default {
                 for (let i = 0; i < this.unselectableDaysOfWeek.length; i++) {
                     const dayOfWeek = this.unselectableDaysOfWeek[i]
                     validity.push(day.getDay() !== dayOfWeek)
+                }
+            }
+
+            if (this.unselectableDaysOfMonth) {
+                for (let i = 0; i < this.unselectableDaysOfMonth.length; i++) {
+                    const dayOfMonth = this.unselectableDaysOfMonth[i]
+                    validity.push(day.getDate() !== dayOfMonth)
                 }
             }
 

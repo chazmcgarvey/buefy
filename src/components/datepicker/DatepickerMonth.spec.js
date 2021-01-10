@@ -164,6 +164,24 @@ describe('BDatepickerMonth', () => {
             unselectableDaysOfWeek: [0, 1]
         })
         expect(wrapper.vm.selectableDate(day)).toBeTruthy()
+
+        wrapper.setProps({
+            unselectableDaysOfWeek: null,
+            unselectableDaysOfMonth: [28, 29, 30]
+        })
+        expect(wrapper.vm.selectableDate(day)).toBeTruthy()
+        wrapper.setProps({
+            unselectableDaysOfMonth: [6]
+        })
+        expect(wrapper.vm.selectableDate(day)).toBeTruthy()
+        wrapper.setProps({
+            unselectableDaysOfMonth: [7]
+        })
+        expect(wrapper.vm.selectableDate(day)).toBeFalsy()
+        wrapper.setProps({
+            unselectableDaysOfMonth: [8]
+        })
+        expect(wrapper.vm.selectableDate(day)).toBeTruthy()
     })
 
     it('emit focused date', () => {

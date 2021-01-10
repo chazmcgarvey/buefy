@@ -134,6 +134,7 @@
                             :disabled="disabled"
                             :unselectable-dates="unselectableDates"
                             :unselectable-days-of-week="unselectableDaysOfWeek"
+                            :unselectable-days-of-month="unselectableDaysOfMonth"
                             :selectable-dates="selectableDates"
                             :events="events"
                             :indicators="indicators"
@@ -160,6 +161,7 @@
                             :disabled="disabled"
                             :unselectable-dates="unselectableDates"
                             :unselectable-days-of-week="unselectableDaysOfWeek"
+                            :unselectable-days-of-month="unselectableDaysOfMonth"
                             :selectable-dates="selectableDates"
                             :events="events"
                             :indicators="indicators"
@@ -332,6 +334,10 @@ export default {
         unselectableDaysOfWeek: {
             type: Array,
             default: () => config.defaultUnselectableDaysOfWeek
+        },
+        unselectableDaysOfMonth: {
+            type: Array,
+            default: () => config.defaultUnselectableDaysOfMonth
         },
         selectableDates: Array,
         dateFormatter: {
